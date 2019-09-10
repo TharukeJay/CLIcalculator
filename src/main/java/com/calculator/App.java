@@ -21,45 +21,55 @@ public class App
         String inputArray = input.nextLine();
         String[] stringArray = inputArray.split(" ");
 
-        oparator = stringArray[0];
-        num1 = Integer.parseInt(stringArray[1]);
-        num2 = Integer.parseInt(stringArray[2]);
 
+            if (stringArray[0].equalsIgnoreCase("Help")) {
+                    System.out.println(" ");
+                    System.out.println("Operations are");
+                    System.out.println("1. Addition = Add");
+                    System.out.println("2. Subscription = Sub");
+                    System.out.println("3. Multiplication = Mul");
+                    System.out.println("4. Division = Dev");
+                    System.out.println(" ");
+                    System.out.println("Input example : Add 10 10");
+                    System.out.println("Result will be: 10 + 10 = 20");
+                    System.out.println(" ");
+                    System.out.println("Operations are not case sensitive, if you input 'ADD' as 'add' or 'Add' operation will continue.");
+                    System.out.println(" ");
+            } else if (stringArray[0].isEmpty()){
+                System.out.println("Invalid operation for more details enter help to get help.");
+            }else
+            {
 
-        if (oparator.equalsIgnoreCase("ADD")) {
-            result = num1 + num2;
-            System.out.println(num1 + "+" + num2 + "" + "=" + result);
-        }else{
-            System.out.println("Invalid operation for more details enter help to get help.");
-        }
-        if (oparator.equalsIgnoreCase("SUB")) {
-            result = num1 - num2;
-            System.out.println(num1 + "-" + num2 + "" + "=" + result);
-        }else{
-            System.out.println("Invalid operation for more details enter help to get help.");
-        }
-        if (oparator.equalsIgnoreCase("multi")) {
-            result = num1 * num2;
-            System.out.println(num1 + "*" + num2 + "" + "=" + result);
-        }else{
-            System.out.println("Invalid operation for more details enter help to get help.");
-        }
-        if (oparator.equalsIgnoreCase("DEV")) {
-            result = num1 / num2;
-            System.out.println(num1 + "/" + num2 + "" + "=" + result);
-        }else{
-            System.out.println("Invalid operation for more details enter help to get help.");
-        }
-        if (oparator.equalsIgnoreCase("mod")) {
-            result = num1 % num2;
-            System.out.println(num1 + "%" + num2 + "" + "=" + result);
-        }else{
-            System.out.println("Invalid operation for more details enter help to get help.");
-        }
+                    oparator = stringArray[0];
+                    num1 = Integer.parseInt(stringArray[1]);
+                    num2 = Integer.parseInt(stringArray[2]);
 
+                    if (oparator.equalsIgnoreCase("ADD")) {
+                        result = num1 + num2;
+                        System.out.println(num1 + "+" + num2 + "" + "=" + result);
+                    }
+                    if (oparator.equalsIgnoreCase("SUB")) {
+                        result = num1 - num2;
+                        System.out.println(num1 + "-" + num2 + "" + "=" + result);
+                    }
+                    if (oparator.equalsIgnoreCase("mul")) {
+                        result = num1 * num2;
+                        System.out.println(num1 + "*" + num2 + "" + "=" + result);
+                    }
+                    if (oparator.equalsIgnoreCase("DEV")) {
+                        result = num1 / num2;
+                        System.out.println(num1 + "/" + num2 + "" + "=" + result);
+                    }
+                    if (oparator.equalsIgnoreCase("mod")) {
+                        result = num1 % num2;
+                        System.out.println(num1 + "%" + num2 + "" + "=" + result);
+                    }
 
+                }
+
+            }
     }
-    }
+
 
 
     public static void main(String[] args)
