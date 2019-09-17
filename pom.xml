@@ -12,9 +12,9 @@
   <url>http://www.example.com</url>
 
   <scm>
-    <connection>scm:git@github.com:TharukeJay/Testcalculator.git</connection>
-    <url>https://github.com/TharukeJay/Testcalculator.git</url>
-    <developerConnection>scm:git@github.com:TharukeJay/Testcalculator.git</developerConnection>
+    <connection>scm:git@github.com:TharukeJay/CLIcalculator.git</connection>
+    <url>https://github.com/TharukeJay/CLIcalculator.git</url>
+    <developerConnection>scm:git@github.com:TharukeJay/CLIcalculator.git</developerConnection>
     <tag>cli2</tag>
   </scm>
 
