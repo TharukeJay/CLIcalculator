@@ -28,7 +28,8 @@ public class App
                     System.out.println("1. Addition = Add");
                     System.out.println("2. Subscription = Sub");
                     System.out.println("3. Multiplication = Mul");
-                    System.out.println("4. Division = Dev");
+                    System.out.println("4. Division = Div");
+                    System.out.println("5. Remainder = Mod");
                     System.out.println(" ");
                     System.out.println("Input example : Add 10 10");
                     System.out.println("Result will be: 10 + 10 = 20");
@@ -36,9 +37,9 @@ public class App
                     System.out.println("Operations are not case sensitive, if you input 'ADD' as 'add' or 'Add' operation will continue.");
                     System.out.println(" ");
             } else if (stringArray[0].isEmpty()){
-                System.out.println("Invalid operation for more details enter help to get help.");
-            }else
-            {
+                System.out.println("Invalid operation. For more details enter help.");
+            }
+            else {
 
                     oparator = stringArray[0];
                     num1 = Integer.parseInt(stringArray[1]);
@@ -56,11 +57,11 @@ public class App
                         result = num1 * num2;
                         System.out.println(num1 + "*" + num2 + "" + "=" + result);
                     }
-                    if (oparator.equalsIgnoreCase("DEV")) {
+                    if (oparator.equalsIgnoreCase("DIV")) {
                         result = num1 / num2;
                         System.out.println(num1 + "/" + num2 + "" + "=" + result);
                     }
-                    if (oparator.equalsIgnoreCase("mod")) {
+                    if (oparator.equalsIgnoreCase("MOD")) {
                         result = num1 % num2;
                         System.out.println(num1 + "%" + num2 + "" + "=" + result);
                     }
